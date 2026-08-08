@@ -1,0 +1,265 @@
+:root {
+  --negro: #0d0d0f;
+  --negro-suave: #181719;
+  --dorado: #bd913d;
+  --dorado-claro: #d4ad5c;
+  --crema: #f6f2e9;
+  --blanco: #ffffff;
+  --gris: #78756f;
+  --borde: #ded8cc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--negro);
+  background: var(--crema);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina-login {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.panel-imagen {
+  position: relative;
+  overflow: hidden;
+  padding: 42px 52px;
+  color: var(--blanco);
+  background:
+    linear-gradient(90deg, rgba(8, 8, 9, .88), rgba(8, 8, 9, .32)),
+    url("imagenes/fachada-raymi-rupestre.jpg") center/cover no-repeat;
+}
+
+.panel-imagen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .55));
+}
+
+.marca,
+.logo-movil {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  color: var(--dorado-claro);
+  letter-spacing: 3px;
+}
+
+.marca-superior,
+.logo-movil span {
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.marca strong,
+.logo-movil strong {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.mensaje-bienvenida {
+  position: absolute;
+  z-index: 1;
+  left: 52px;
+  bottom: 74px;
+  max-width: 540px;
+}
+
+.linea-dorada {
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin-bottom: 25px;
+  background: var(--dorado);
+}
+
+.mensaje-bienvenida p,
+.etiqueta {
+  margin: 0 0 12px;
+  color: var(--dorado-claro);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mensaje-bienvenida h1 {
+  margin: 0 0 18px;
+  font: 400 clamp(36px, 4vw, 58px)/1.05 Georgia, serif;
+}
+
+.mensaje-bienvenida > span:last-child {
+  display: block;
+  max-width: 440px;
+  color: #d8d4cc;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.panel-formulario {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 58px 24px;
+  background: var(--blanco);
+}
+
+.encabezado-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-movil {
+  display: none;
+}
+
+.estado-sistema {
+  color: var(--gris);
+  font-size: 11px;
+}
+
+.estado-sistema i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #5aa875;
+}
+
+.formulario-login {
+  width: min(100%, 390px);
+  margin: auto;
+}
+
+.formulario-login h2 {
+  margin: 0 0 8px;
+  font: 400 42px Georgia, serif;
+}
+
+.formulario-login > p {
+  margin: 0 0 38px;
+  color: var(--gris);
+  font-size: 14px;
+}
+
+.formulario-login > label {
+  display: block;
+  margin: 18px 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.campo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid var(--borde);
+  border-radius: 7px;
+  color: var(--dorado);
+}
+
+.campo:focus-within {
+  border-color: var(--dorado);
+  box-shadow: 0 0 0 3px rgba(189, 145, 61, .12);
+}
+
+.campo input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  color: var(--negro);
+  font-size: 13px;
+}
+
+.campo button {
+  border: 0;
+  color: var(--gris);
+  background: transparent;
+  cursor: pointer;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0 26px;
+  color: var(--gris);
+  font-size: 11px;
+}
+
+.opciones a {
+  color: var(--dorado);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.boton-ingresar {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 7px;
+  color: var(--blanco);
+  background: var(--dorado);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.boton-ingresar:hover {
+  background: #a97d2f;
+}
+
+.formulario-login small {
+  display: block;
+  margin-top: 23px;
+  color: #aaa69d;
+  text-align: center;
+}
+
+.panel-formulario footer {
+  color: #aaa69d;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .pagina-login {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-imagen {
+    display: none;
+  }
+
+  .panel-formulario {
+    padding: 28px 24px 20px;
+  }
+
+  .encabezado-login {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-movil {
+    display: flex;
+  }
+
+  .logo-movil strong {
+    font-size: 25px;
+  }
+}
