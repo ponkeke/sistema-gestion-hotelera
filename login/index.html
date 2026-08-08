@@ -3,54 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar sesión | Hotel Raymi</title>
+  <title>Acceso al equipo | Hotel Raymi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="pagina-login">
-    <section class="panel-imagen">
-      <div class="marca">
-        <span class="marca-superior">✦ ✦ HOTEL</span>
-        <strong>RAYMI</strong>
+    <section class="panel-marca">
+      <img class="logo-raymi" src="imagenes/logo-raymi.png" alt="Hotel Raymi">
+      <img class="adorno escalones-superior" src="imagenes/adorno-escalones-superior.png" alt="">
+      <img class="adorno camelido-superior" src="imagenes/adorno-camelido.png" alt="">
+      <img class="adorno sol" src="imagenes/adorno-sol.png" alt="">
+      <img class="adorno montanas" src="imagenes/adorno-montanas.png" alt="">
+      <img class="adorno escalones-lateral" src="imagenes/adorno-escalones-lateral.png" alt="">
+      <img class="adorno personaje" src="imagenes/adorno-personaje.png" alt="">
+      <img class="adorno camelido-inferior" src="imagenes/adorno-camelido.png" alt="">
+      <div class="mensaje-marca">
+        <h1>TODO TU HOTEL,<br>EN SINTONÍA</h1>
+        <p>Reservas, habitaciones, huéspedes y equipo coordinados en un solo lugar.</p>
       </div>
-      <div class="mensaje-bienvenida">
-        <span class="linea-dorada"></span>
-        <p>Gestión hotelera</p>
-        <h1>La hospitalidad empieza con una buena gestión.</h1>
-        <span>Organiza reservas, huéspedes y habitaciones desde un solo lugar.</span>
-      </div>
+      <section class="indicador-ocupacion">
+        <div class="dato-ocupacion">
+          <strong>86%</strong>
+          <span>ocupación proyectada hoy</span>
+        </div>
+        <div class="barra-progreso"><i></i></div>
+        <p>28 llegadas · 6 salidas · 3 habitaciones en limpieza</p>
+      </section>
     </section>
-    <section class="panel-formulario">
-      <header class="encabezado-login">
-        <div class="logo-movil">
-          <span>✦ ✦ HOTEL</span>
-          <strong>RAYMI</strong>
-        </div>
-        <span class="estado-sistema"><i></i> Sistema operativo</span>
-      </header>
-      <form class="formulario-login">
-        <span class="etiqueta">ACCESO AL SISTEMA</span>
-        <h2>Bienvenido</h2>
-        <p>Ingresa tus credenciales para continuar.</p>
-        <label for="usuario">Usuario</label>
-        <div class="campo">
-          <span>♙</span>
-          <input id="usuario" type="text" placeholder="Ingresa tu usuario">
-        </div>
-        <label for="contrasena">Contraseña</label>
-        <div class="campo">
-          <span>▣</span>
-          <input id="contrasena" type="password" placeholder="Ingresa tu contraseña">
-          <button type="button" aria-label="Mostrar contraseña">◉</button>
-        </div>
-        <div class="opciones">
-          <label><input type="checkbox"> Recordarme</label>
+    <section class="panel-acceso">
+      <form class="formulario-acceso">
+        <span class="etiqueta-acceso">ACCESO AL EQUIPO</span>
+        <h2>Hola de nuevo</h2>
+        <p class="descripcion-acceso">Ingresa para continuar con la operación de hoy.</p>
+        <label for="correo">Etiqueta</label>
+        <input id="correo" type="email" placeholder="nombre@hotel.com">
+        <label for="contrasena">Etiqueta</label>
+        <input id="contrasena" type="password" placeholder="••••••••••">
+        <div class="opciones-acceso">
+          <label class="recordarme"><input type="checkbox"> <span>Recordarme</span></label>
           <a href="#">¿Olvidaste tu contraseña?</a>
         </div>
-        <button class="boton-ingresar" type="submit">Ingresar</button>
-        <small>Acceso exclusivo para personal autorizado</small>
+        <button type="submit">Iniciar sesión</button>
+        <section class="aviso-seguridad">
+          <img src="imagenes/icono-seguridad.svg" alt="">
+          <div><strong>Acceso seguro</strong><span>Cifrado y verificación en dos pasos.</span></div>
+        </section>
       </form>
-      <footer>© 2026 Hotel Raymi · Huancayo</footer>
     </section>
   </main>
 </body>
