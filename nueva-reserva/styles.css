@@ -8,6 +8,7 @@
   --texto: #151515;
   --gris: #79766f;
   --borde: #ded7ca;
+  --azul-seleccion: #1e9dec;
 }
 
 * {
@@ -221,7 +222,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   margin: 10px -3px 19px;
   padding: 0 18px;
-  border: 2px solid #1e9dec;
+  border: 2px solid var(--azul-seleccion);
   background: var(--blanco);
   list-style: none;
 }
