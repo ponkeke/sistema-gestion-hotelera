@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva reserva | Hotel Raymi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aplicacion">
+    <aside class="barra-lateral">
+      <div class="logo">
+        <span>✦ ✦ HOTEL</span>
+        <strong>RAYMI</strong>
+      </div>
+      <section class="propiedad">
+        <small>PROPIEDAD</small>
+        <b>Hotel Huancayo</b>
+      </section>
+      <nav>
+        <p>OPERACIÓN</p>
+        <a href="#"><span>⌂</span>Inicio</a>
+        <a href="#"><span>▣</span>Reservas</a>
+        <a href="#"><span>▰</span>Habitaciones</a>
+        <a href="#"><span>♙</span>Huéspedes</a>
+        <a href="#"><span>▤</span>Caja y turnos</a>
+        <a href="#"><span>▥</span>Reportes</a>
+        <p>ADMINISTRACIÓN</p>
+        <a href="#"><span>♙</span>Personal</a>
+        <a href="#"><span>◇</span>Catálogos</a>
+        <a href="#"><span>⚙</span>Configuración</a>
+      </nav>
+      <section class="usuario">
+        <i></i>
+        <div><b>Recepción</b><small>Turno activo · Cerrar sesión</small></div>
+      </section>
+    </aside>
+    <main>
+      <header class="barra-superior">
+        <div><b>Reservas</b><small>Miércoles, 22 de julio</small></div>
+        <div class="acciones"><span>Recepción</span><button>♧</button><i>RE</i></div>
+      </header>
+      <section class="contenido">
+        <div class="titulo">
+          <h1>Nueva reserva</h1>
+          <p>Paso 1 de 4 · Consulta disponibilidad real.</p>
+        </div>
+        <ol class="pasos">
+          <li class="activo"><b>1</b><span>Huésped</span></li>
+          <li><b>2</b><span>Pago</span></li>
+          <li><b>3</b><span>Pago</span></li>
+          <li><b>4</b><span>Pago</span></li>
+        </ol>
+        <section class="tarjeta fechas">
+          <h2>Fechas y modalidad</h2>
+          <div class="campos">
+            <label>Ingreso<input value="22 jul · 14:00" readonly></label>
+            <label>Salida<input value="24 jul · 12:00" readonly></label>
+            <label>Hospedaje<input value="Por días" readonly></label>
+            <label>Huéspedes<input value="2 adultos" readonly></label>
+          </div>
+        </section>
+        <h2 class="disponibles">5 habitaciones disponibles</h2>
+        <section class="tarjeta tabla-contenedor">
+          <table>
+            <thead><tr><th>HABITACIÓN</th><th>CATEGORÍA</th><th>CAPACIDAD</th><th>TARIFA/NOCHE</th><th>ESTADO</th></tr></thead>
+            <tbody>
+              <tr><td>102</td><td>Matrimonial</td><td>2</td><td>S/ 180</td><td>Disponible</td></tr>
+              <tr class="seleccionada"><td>204</td><td>Suite Deluxe</td><td>2</td><td>S/ 280</td><td>Disponible</td></tr>
+              <tr><td>305</td><td>Familiar</td><td>4</td><td>S/ 260</td><td>Disponible</td></tr>
+              <tr><td>402</td><td>Suite Junior</td><td>2</td><td>S/ 220</td><td>Disponible</td></tr>
+              <tr><td>509</td><td>Presidencial</td><td>2</td><td>S/ 450</td><td>Disponible</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <footer class="resumen"><b>Total estimado: S/ 560.00</b><button>Seleccionar 204</button></footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
