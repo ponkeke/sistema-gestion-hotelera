@@ -33,34 +33,21 @@ body {
   padding: 42px 52px;
   color: var(--blanco);
   background:
-    linear-gradient(90deg, rgba(8, 8, 9, .84), rgba(8, 8, 9, .2)),
-    linear-gradient(145deg, #302519 0 35%, #8b6938 36% 48%, #171311 49% 100%);
-}
-
-.panel-imagen::before,
-.panel-imagen::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(212, 173, 92, .25);
-  transform: rotate(45deg);
+    linear-gradient(90deg, rgba(8, 8, 9, .88), rgba(8, 8, 9, .32)),
+    url("imagenes/fachada-raymi-rupestre.jpg") center/cover no-repeat;
 }
 
 .panel-imagen::before {
-  width: 360px;
-  height: 360px;
-  right: -120px;
-  top: 70px;
-}
-
-.panel-imagen::after {
-  width: 220px;
-  height: 220px;
-  left: 120px;
-  bottom: -100px;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .55));
 }
 
 .marca,
 .logo-movil {
+  position: relative;
+  z-index: 1;
   display: flex;
   width: max-content;
   flex-direction: column;
