@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>habitaciones | Hotel Raymi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-pantalla="habitaciones">
+  <div id="aplicacion">
+    <aside class="barra-lateral" id="barra-lateral">
+      <a class="marca" href="../dashboard/"><img src="img/logo-raymi.png" alt="Hotel Raymi"></a>
+      <section class="tarjeta-propiedad"><span>Propiedad</span><strong>Hotel Huancayo</strong></section>
+      <nav class="navegacion">
+        <p class="titulo-navegacion">Operación</p>
+        
+    <a class="elemento-navegacion " href="../dashboard/">
+      <img src="img/icono-inicio.svg" alt="">
+      <span>Inicio</span>
+    </a>
+    <a class="elemento-navegacion " href="../disponibilidad/">
+      <img src="img/icono-calendario.svg" alt="">
+      <span>Reservas</span>
+    </a>
+    <a class="elemento-navegacion activo" href="../habitaciones/">
+      <img src="img/icono-habitaciones.svg" alt="">
+      <span>Habitaciones</span>
+    </a>
+    <a class="elemento-navegacion " href="../cliente-dni/">
+      <img src="img/icono-usuario.svg" alt="">
+      <span>Huéspedes</span>
+    </a>
+    <a class="elemento-navegacion " href="../caja-turno/">
+      <img src="img/icono-cartera.svg" alt="">
+      <span>Caja y turnos</span>
+    </a>
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-reporte.svg" alt="">
+      <span>Reportes</span>
+    </a>
+        <p class="titulo-navegacion titulo-administracion">Administración</p>
+        
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-usuario.svg" alt="">
+      <span>Personal</span>
+    </a>
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-caja.svg" alt="">
+      <span>Catálogos</span>
+    </a>
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-configuracion.svg" alt="">
+      <span>Configuración</span>
+    </a>
+      </nav>
+      <section class="tarjeta-perfil"><span class="avatar-perfil">RE</span><div><strong>Recepción</strong><small>Turno activo · Cerrar sesión</small></div></section>
+    </aside><main class="area-aplicacion">
+    <header class="barra-superior">
+      <button class="boton-menu" type="button" aria-label="Abrir menú" id="boton-menu">☰</button>
+      <div class="titulo-barra"><strong>Habitaciones</strong><span>Miércoles, 22 de julio</span></div>
+      <div class="acciones-barra"><span class="etiqueta-rol">Recepción</span><button class="boton-icono" aria-label="Notificaciones"><img src="img/icono-campana.svg" alt=""></button><span class="avatar-superior">RE</span></div>
+    </header><div class="contenido-pagina">
+    <section class="encabezado-pagina"><div><h1>Mapa de habitaciones</h1><p>Visibilidad inmediata del estado y la próxima acción.</p></div><span class="aviso-reservas">Reservas próximos 15 días <b>7</b></span></section>
+    <form class="barra-filtros"><label class="campo-busqueda"><span>Buscar</span><input type="search" placeholder="Número o huésped"></label><select aria-label="Piso"><option>Todos los pisos</option><option>Piso 1</option><option>Piso 2</option></select><select aria-label="Tipo"><option>Todos los tipos</option><option>Matrimonial</option><option>Suite Deluxe</option></select><select aria-label="Estado"><option>Todos los estados</option><option>Disponible</option><option>Ocupada</option></select><button class="boton-secundario">Aplicar</button></form>
+    <section class="cuadricula-habitaciones"><article class="tarjeta-habitacion disponible"><img src="img/habitacion-102.png" alt="Habitación 102"><div><span>Habitación</span><strong>102</strong><small>Matrimonial · Piso 2</small><em><i class="punto disponible"></i>Disponible</em></div></article><article class="tarjeta-habitacion ocupada"><img src="img/habitacion-102.png" alt="Habitación 204"><div><span>Habitación</span><strong>204</strong><small>Suite Deluxe · 2 huéspedes</small><em><i class="punto ocupada"></i>Ocupada</em></div></article><article class="tarjeta-habitacion reservada"><img src="img/habitacion-102.png" alt="Habitación 305"><div><span>Habitación</span><strong>305</strong><small>Matrimonial · Piso 2</small><em><i class="punto reservada"></i>Reservada</em></div></article><article class="tarjeta-habitacion limpieza"><img src="img/habitacion-102.png" alt="Habitación 118"><div><span>Habitación</span><strong>118</strong><small>Matrimonial · Piso 2</small><em><i class="punto limpieza"></i>Limpieza</em></div></article><article class="tarjeta-habitacion disponible"><img src="img/habitacion-102.png" alt="Habitación 102"><div><span>Habitación</span><strong>102</strong><small>Matrimonial · Piso 2</small><em><i class="punto disponible"></i>Disponible</em></div></article><article class="tarjeta-habitacion ocupada"><img src="img/habitacion-102.png" alt="Habitación 204"><div><span>Habitación</span><strong>204</strong><small>Suite Deluxe · 2 huéspedes</small><em><i class="punto ocupada"></i>Ocupada</em></div></article><article class="tarjeta-habitacion disponible"><img src="img/habitacion-102.png" alt="Habitación 102"><div><span>Habitación</span><strong>102</strong><small>Matrimonial · Piso 2</small><em><i class="punto disponible"></i>Disponible</em></div></article><article class="tarjeta-habitacion reservada"><img src="img/habitacion-102.png" alt="Habitación 305"><div><span>Habitación</span><strong>305</strong><small>Matrimonial · Piso 2</small><em><i class="punto reservada"></i>Reservada</em></div></article><article class="tarjeta-habitacion limpieza"><img src="img/habitacion-102.png" alt="Habitación 118"><div><span>Habitación</span><strong>118</strong><small>Matrimonial · Piso 2</small><em><i class="punto limpieza"></i>Limpieza</em></div></article><article class="tarjeta-habitacion disponible"><img src="img/habitacion-102.png" alt="Habitación 102"><div><span>Habitación</span><strong>102</strong><small>Matrimonial · Piso 2</small><em><i class="punto disponible"></i>Disponible</em></div></article><article class="tarjeta-habitacion ocupada"><img src="img/habitacion-102.png" alt="Habitación 204"><div><span>Habitación</span><strong>204</strong><small>Suite Deluxe · 2 huéspedes</small><em><i class="punto ocupada"></i>Ocupada</em></div></article><article class="tarjeta-habitacion disponible"><img src="img/habitacion-102.png" alt="Habitación 102"><div><span>Habitación</span><strong>102</strong><small>Matrimonial · Piso 2</small><em><i class="punto disponible"></i>Disponible</em></div></article></section>
+    <footer class="leyenda-habitaciones"><span><i class="punto disponible"></i>Disponible</span><span><i class="punto ocupada"></i>Ocupada</span><span><i class="punto reservada"></i>Reservada</span><span><i class="punto limpieza"></i>Limpieza</span><small>1–12 de 48</small></footer></div></main></div>
+  
+
+
+<script>const botonMenu=document.getElementById("boton-menu");if(botonMenu)botonMenu.addEventListener("click",()=>document.getElementById("barra-lateral").classList.toggle("visible"));</script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cuenta huesped | Hotel Raymi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-pantalla="cuenta-huesped">
+  <div id="aplicacion">
+    <aside class="barra-lateral" id="barra-lateral">
+      <a class="marca" href="../dashboard/"><img src="img/logo-raymi.png" alt="Hotel Raymi"></a>
+      <section class="tarjeta-propiedad"><span>Propiedad</span><strong>Hotel Huancayo</strong></section>
+      <nav class="navegacion">
+        <p class="titulo-navegacion">Operación</p>
+        
+    <a class="elemento-navegacion " href="../dashboard/">
+      <img src="img/icono-inicio.svg" alt="">
+      <span>Inicio</span>
+    </a>
+    <a class="elemento-navegacion " href="../disponibilidad/">
+      <img src="img/icono-calendario.svg" alt="">
+      <span>Reservas</span>
+    </a>
+    <a class="elemento-navegacion " href="../habitaciones/">
+      <img src="img/icono-habitaciones.svg" alt="">
+      <span>Habitaciones</span>
+    </a>
+    <a class="elemento-navegacion activo" href="../cliente-dni/">
+      <img src="img/icono-usuario.svg" alt="">
+      <span>Huéspedes</span>
+    </a>
+    <a class="elemento-navegacion " href="../caja-turno/">
+      <img src="img/icono-cartera.svg" alt="">
+      <span>Caja y turnos</span>
+    </a>
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-reporte.svg" alt="">
+      <span>Reportes</span>
+    </a>
+        <p class="titulo-navegacion titulo-administracion">Administración</p>
+        
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-usuario.svg" alt="">
+      <span>Personal</span>
+    </a>
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-caja.svg" alt="">
+      <span>Catálogos</span>
+    </a>
+    <a class="elemento-navegacion " href="#">
+      <img src="img/icono-configuracion.svg" alt="">
+      <span>Configuración</span>
+    </a>
+      </nav>
+      <section class="tarjeta-perfil"><span class="avatar-perfil">RE</span><div><strong>Recepción</strong><small>Turno activo · Cerrar sesión</small></div></section>
+    </aside><main class="area-aplicacion">
+    <header class="barra-superior">
+      <button class="boton-menu" type="button" aria-label="Abrir menú" id="boton-menu">☰</button>
+      <div class="titulo-barra"><strong>Huéspedes</strong><span>Miércoles, 22 de julio</span></div>
+      <div class="acciones-barra"><span class="etiqueta-rol">Recepción</span><button class="boton-icono" aria-label="Notificaciones"><img src="img/icono-campana.svg" alt=""></button><span class="avatar-superior">RE</span></div>
+    </header><div class="contenido-pagina">
+    <section class="encabezado-pagina"><div><h1>Cuenta del huésped</h1><p>Estadía activa · Habitación 204 · RES-00241</p></div><a class="boton-principal" href="../check-out/">Iniciar check-out</a></section>
+    <article class="tarjeta-oscura cabecera-cuenta"><div><h2>Valeria Méndez Rojas</h2><small>Ingreso 22 jul · 14:07 · Salida prevista 24 jul · 12:00</small></div><div><span>Estadía activa</span><strong>S/ 126.00</strong><small>saldo pendiente</small></div></article>
+    <nav class="pestanas"><button class="activo">Resumen</button><button>Consumos</button><button>Pagos</button><button>Historial</button></nav>
+    <section class="cuadricula-cuenta"><div class="contenedor-tabla"><table><thead><tr><th>Fecha</th><th>Concepto</th><th>Monto</th><th>Tipo</th></tr></thead><tbody><tr><td>22 jul · 14:07</td><td>Hospedaje · 2 noches</td><td>S/ 560.00</td><td>Cargo</td></tr><tr><td>22 jul · 14:08</td><td>Pago reserva · Efectivo</td><td>− S/ 544.00</td><td>Pago</td></tr><tr><td>22 jul · 18:20</td><td>Minibar · 2 aguas</td><td>S/ 12.00</td><td>Consumo</td></tr><tr><td>23 jul · 08:40</td><td>Desayuno adicional</td><td>S/ 28.00</td><td>Consumo</td></tr><tr><td>23 jul · 21:10</td><td>Lavandería</td><td>S/ 70.00</td><td>Consumo</td></tr></tbody></table></div><article class="tarjeta balance"><span>Resumen</span><dl><div><dt>Hospedaje</dt><dd>S/ 560.00</dd></div><div><dt>Consumos</dt><dd>S/ 110.00</dd></div><div><dt>Pagos</dt><dd>− S/ 544.00</dd></div></dl><hr><span>Saldo pendiente</span><strong>S/ 126.00</strong></article></section><div class="acciones-finales"><button class="boton-secundario">Agregar consumo</button><button class="boton-principal">Registrar pago</button></div></div></main></div>
+  
+
+
+<script>const botonMenu=document.getElementById("boton-menu");if(botonMenu)botonMenu.addEventListener("click",()=>document.getElementById("barra-lateral").classList.toggle("visible"));</script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
