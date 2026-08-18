@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>configurar reserva | Hotel Raymi</title>
+
+    <link rel="stylesheet" href="../css/base/variables.css" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/tipografia.css" />
+    <link rel="stylesheet" href="../css/componentes/interfaz.css" />
+    <link rel="stylesheet" href="../css/componentes/funcionalidad.css" />
+    <link rel="stylesheet" href="../css/pantallas/configurar_reserva.css" />
+    <link rel="stylesheet" href="../css/adaptable.css" />
+  </head>
+  <body data-pantalla="configurar-reserva" class="reserva_configuracion">
+    <div id="aplicacion" class="reserva_configuracion__contenedor">
+      <aside class="barra-lateral menu__contenedor" id="barra-lateral">
+        <a class="marca menu__contenedor__marca" href="dashboard.html"
+          ><img
+            src="../img/configurar_reserva/logo-raymi.png"
+            alt="Hotel Raymi"
+        /></a>
+        <section class="tarjeta-propiedad menu__contenedor__propiedad">
+          <span>Propiedad</span><strong>Hotel Huancayo</strong>
+        </section>
+        <nav class="navegacion menu__contenedor__navegacion">
+          <p class="titulo-navegacion">Operación</p>
+
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="dashboard.html"
+          >
+            <img src="../img/configurar_reserva/icono-inicio.svg" alt="" />
+            <span>Inicio</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
+            href="disponibilidad.html"
+          >
+            <img src="../img/configurar_reserva/icono-calendario.svg" alt="" />
+            <span>Reservas</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="habitaciones.html"
+          >
+            <img
+              src="../img/configurar_reserva/icono-habitaciones.svg"
+              alt=""
+            />
+            <span>Habitaciones</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="cliente_dni.html"
+          >
+            <img src="../img/configurar_reserva/icono-usuario.svg" alt="" />
+            <span>Huéspedes</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="caja_turno.html"
+          >
+            <img src="../img/configurar_reserva/icono-cartera.svg" alt="" />
+            <span>Caja y turnos</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/configurar_reserva/icono-reporte.svg" alt="" />
+            <span>Reportes</span>
+          </a>
+          <p class="titulo-navegacion titulo-administracion">Administración</p>
+
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/configurar_reserva/icono-usuario.svg" alt="" />
+            <span>Personal</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/configurar_reserva/icono-caja.svg" alt="" />
+            <span>Catálogos</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img
+              src="../img/configurar_reserva/icono-configuracion.svg"
+              alt=""
+            />
+            <span>Configuración</span>
+          </a>
+        </nav>
+        <section class="tarjeta-perfil">
+          <span class="avatar-perfil">RE</span>
+          <div>
+            <strong>Recepción</strong
+            ><small>Turno activo · Cerrar sesión</small>
+          </div>
+        </section>
+      </aside>
+      <main class="area-aplicacion">
+        <header class="barra-superior barra__contenedor">
+          <button
+            class="boton-menu"
+            type="button"
+            aria-label="Abrir menú"
+            id="boton-menu"
+          >
+            ☰
+          </button>
+          <div class="titulo-barra">
+            <strong>Reservas</strong><span>Miércoles, 22 de julio</span>
+          </div>
+          <div class="acciones-barra">
+            <span class="etiqueta-rol">Recepción</span
+            ><button class="boton-icono" aria-label="Notificaciones">
+              <img
+                src="../img/configurar_reserva/icono-campana.svg"
+                alt=""
+              /></button
+            ><span class="avatar-superior">RE</span>
+          </div>
+        </header>
+        <div
+          class="contenido-pagina reserva_configuracion__contenedor__contenido"
+        >
+          <section class="encabezado-pagina">
+            <div>
+              <h1>Configurar reserva</h1>
+              <p>Paso 3 de 4 · Modalidad, extras y descuento.</p>
+            </div>
+          </section>
+          <ol class="pasos-reserva">
+            <li class="completado"><b>1</b><span>Disponibilidad</span></li>
+            <li class="completado"><b>2</b><span>Huésped</span></li>
+            <li class="activo"><b>3</b><span>Configuración</span></li>
+            <li class=""><b>4</b><span>Pago</span></li>
+          </ol>
+          <section class="cuadricula-configuracion">
+            <form class="tarjeta formulario-configuracion">
+              <h2>Información de la estadía</h2>
+              <div class="selector-segmentado">
+                <label
+                  ><input type="radio" name="modalidad" checked="" /><span
+                    >Por días</span
+                  ></label
+                ><label
+                  ><input type="radio" name="modalidad" /><span
+                    >Por horas</span
+                  ></label
+                >
+              </div>
+              <div class="cuadricula-campos">
+                <label class="campo"
+                  ><span>Habitación</span
+                  ><input
+                    type="text"
+                    name="habitacion"
+                    value="204 · Suite Deluxe" /></label
+                ><label class="campo"
+                  ><span>Ingreso</span
+                  ><input
+                    type="datetime-local"
+                    name="ingreso"
+                    value="2026-07-22T14:00" /></label
+                ><label class="campo"
+                  ><span>Salida</span
+                  ><input
+                    type="datetime-local"
+                    name="salida"
+                    value="2026-07-24T12:00" /></label
+                ><label class="campo"
+                  ><span>Huéspedes</span
+                  ><input type="number" name="huespedes" value="2"
+                /></label>
+              </div>
+              <fieldset>
+                <legend>Servicios incluidos</legend>
+                <label><input type="checkbox" checked="" /> Desayuno</label
+                ><label><input type="checkbox" checked="" /> Wi-Fi</label
+                ><label><input type="checkbox" /> Cochera</label
+                ><label><input type="checkbox" /> Minibar</label>
+              </fieldset>
+              <div class="fila-descuento">
+                <label class="campo"
+                  ><span>Descuento</span
+                  ><input
+                    type="text"
+                    name="descuento"
+                    value="10% · Cliente frecuente"
+                /></label>
+                <p>Se descontarán S/ 56.00 del total.</p>
+              </div>
+            </form>
+            <aside class="tarjeta-oscura resumen-reserva">
+              <span>Resumen</span>
+              <h2>Suite Deluxe</h2>
+              <dl>
+                <div>
+                  <dt>2 noches</dt>
+                  <dd>S/ 560.00</dd>
+                </div>
+                <div>
+                  <dt>Servicios</dt>
+                  <dd>S/ 40.00</dd>
+                </div>
+                <div>
+                  <dt>Descuento</dt>
+                  <dd>− S/ 56.00</dd>
+                </div>
+              </dl>
+              <hr />
+              <span>Total</span><strong>S/ 544.00</strong
+              ><a class="boton-principal" href="pago_comprobante.html"
+                >Continuar al pago</a
+              >
+            </aside>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/componentes/almacenamiento.js"></script>
+    <script src="../js/componentes/validaciones.js"></script>
+    <script src="../js/componentes/comun.js"></script>
+    <script src="../js/componentes/menu.js"></script>
+    <script src="../js/pantallas/configurar_reserva.js"></script>
+  </body>
+</html>

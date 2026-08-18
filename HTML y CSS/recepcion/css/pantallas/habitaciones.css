@@ -1,0 +1,10 @@
+.habitaciones__contenedor {
+  width: 100%;
+}
+
+.habitaciones__contenedor__accion:focus-visible,
+.habitaciones__contenedor button:focus-visible,
+.habitaciones__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}

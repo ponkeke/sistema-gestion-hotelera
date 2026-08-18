@@ -1,0 +1,10 @@
+.acceso__contenedor {
+  width: 100%;
+}
+
+.acceso__contenedor__accion:focus-visible,
+.acceso__contenedor button:focus-visible,
+.acceso__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}

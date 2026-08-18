@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>disponibilidad | Hotel Raymi</title>
+
+    <link rel="stylesheet" href="../css/base/variables.css" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/tipografia.css" />
+    <link rel="stylesheet" href="../css/componentes/interfaz.css" />
+    <link rel="stylesheet" href="../css/componentes/funcionalidad.css" />
+    <link rel="stylesheet" href="../css/pantallas/disponibilidad.css" />
+    <link rel="stylesheet" href="../css/adaptable.css" />
+  </head>
+  <body data-pantalla="disponibilidad" class="reserva_disponibilidad">
+    <div id="aplicacion" class="reserva_disponibilidad__contenedor">
+      <aside class="barra-lateral menu__contenedor" id="barra-lateral">
+        <a class="marca menu__contenedor__marca" href="dashboard.html"
+          ><img src="../img/disponibilidad/logo-raymi.png" alt="Hotel Raymi"
+        /></a>
+        <section class="tarjeta-propiedad menu__contenedor__propiedad">
+          <span>Propiedad</span><strong>Hotel Huancayo</strong>
+        </section>
+        <nav class="navegacion menu__contenedor__navegacion">
+          <p class="titulo-navegacion">Operación</p>
+
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="dashboard.html"
+          >
+            <img src="../img/disponibilidad/icono-inicio.svg" alt="" />
+            <span>Inicio</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
+            href="disponibilidad.html"
+          >
+            <img src="../img/disponibilidad/icono-calendario.svg" alt="" />
+            <span>Reservas</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="habitaciones.html"
+          >
+            <img src="../img/disponibilidad/icono-habitaciones.svg" alt="" />
+            <span>Habitaciones</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="cliente_dni.html"
+          >
+            <img src="../img/disponibilidad/icono-usuario.svg" alt="" />
+            <span>Huéspedes</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="caja_turno.html"
+          >
+            <img src="../img/disponibilidad/icono-cartera.svg" alt="" />
+            <span>Caja y turnos</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/disponibilidad/icono-reporte.svg" alt="" />
+            <span>Reportes</span>
+          </a>
+          <p class="titulo-navegacion titulo-administracion">Administración</p>
+
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/disponibilidad/icono-usuario.svg" alt="" />
+            <span>Personal</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/disponibilidad/icono-caja.svg" alt="" />
+            <span>Catálogos</span>
+          </a>
+          <a
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            href="#"
+          >
+            <img src="../img/disponibilidad/icono-configuracion.svg" alt="" />
+            <span>Configuración</span>
+          </a>
+        </nav>
+        <section class="tarjeta-perfil">
+          <span class="avatar-perfil">RE</span>
+          <div>
+            <strong>Recepción</strong
+            ><small>Turno activo · Cerrar sesión</small>
+          </div>
+        </section>
+      </aside>
+      <main class="area-aplicacion">
+        <header class="barra-superior barra__contenedor">
+          <button
+            class="boton-menu"
+            type="button"
+            aria-label="Abrir menú"
+            id="boton-menu"
+          >
+            ☰
+          </button>
+          <div class="titulo-barra">
+            <strong>Reservas</strong><span>Miércoles, 22 de julio</span>
+          </div>
+          <div class="acciones-barra">
+            <span class="etiqueta-rol">Recepción</span
+            ><button class="boton-icono" aria-label="Notificaciones">
+              <img
+                src="../img/disponibilidad/icono-campana.svg"
+                alt=""
+              /></button
+            ><span class="avatar-superior">RE</span>
+          </div>
+        </header>
+        <div
+          class="contenido-pagina reserva_disponibilidad__contenedor__contenido"
+        >
+          <section class="encabezado-pagina">
+            <div>
+              <h1>Nueva reserva</h1>
+              <p>Paso 1 de 4 · Consulta disponibilidad real.</p>
+            </div>
+          </section>
+          <ol class="pasos-reserva">
+            <li class="activo"><b>1</b><span>Disponibilidad</span></li>
+            <li class=""><b>2</b><span>Huésped</span></li>
+            <li class=""><b>3</b><span>Configuración</span></li>
+            <li class=""><b>4</b><span>Pago</span></li>
+          </ol>
+          <form class="tarjeta formulario-fechas">
+            <h2>Fechas y modalidad</h2>
+            <div class="cuadricula-campos">
+              <label class="campo"
+                ><span>Ingreso</span
+                ><input
+                  type="datetime-local"
+                  name="ingreso"
+                  value="2026-07-22T14:00" /></label
+              ><label class="campo"
+                ><span>Salida</span
+                ><input
+                  type="datetime-local"
+                  name="salida"
+                  value="2026-07-24T12:00" /></label
+              ><label class="campo"
+                ><span>Hospedaje</span
+                ><select name="hospedaje">
+                  <option>Por días</option>
+                  <option>Por horas</option>
+                </select></label
+              ><label class="campo"
+                ><span>Huéspedes</span
+                ><input type="number" name="huespedes" value="2"
+              /></label>
+            </div>
+          </form>
+          <section class="seccion-tabla">
+            <h2>5 habitaciones disponibles</h2>
+            <div class="contenedor-tabla">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Habitación</th>
+                    <th>Categoría</th>
+                    <th>Capacidad</th>
+                    <th>Tarifa/noche</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>102</td>
+                    <td>Matrimonial</td>
+                    <td>2</td>
+                    <td>S/ 180</td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>204</td>
+                    <td>Suite Deluxe</td>
+                    <td>2</td>
+                    <td>S/ 280</td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>305</td>
+                    <td>Familiar</td>
+                    <td>4</td>
+                    <td>S/ 260</td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>402</td>
+                    <td>Suite Junior</td>
+                    <td>2</td>
+                    <td>S/ 220</td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>509</td>
+                    <td>Presidencial</td>
+                    <td>2</td>
+                    <td>S/ 450</td>
+                    <td>Disponible</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="acciones-finales">
+              <strong>Total estimado: S/ 560.00</strong
+              ><a class="boton-principal" href="cliente_dni.html"
+                >Seleccionar 204</a
+              >
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/componentes/almacenamiento.js"></script>
+    <script src="../js/componentes/validaciones.js"></script>
+    <script src="../js/componentes/comun.js"></script>
+    <script src="../js/componentes/menu.js"></script>
+    <script src="../js/pantallas/disponibilidad.js"></script>
+  </body>
+</html>

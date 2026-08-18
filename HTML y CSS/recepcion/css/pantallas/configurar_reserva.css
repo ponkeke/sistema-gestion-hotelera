@@ -1,0 +1,10 @@
+.reserva_configuracion__contenedor {
+  width: 100%;
+}
+
+.reserva_configuracion__contenedor__accion:focus-visible,
+.reserva_configuracion__contenedor button:focus-visible,
+.reserva_configuracion__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}

@@ -1,0 +1,10 @@
+.hospedaje_salida__contenedor {
+  width: 100%;
+}
+
+.hospedaje_salida__contenedor__accion:focus-visible,
+.hospedaje_salida__contenedor button:focus-visible,
+.hospedaje_salida__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}

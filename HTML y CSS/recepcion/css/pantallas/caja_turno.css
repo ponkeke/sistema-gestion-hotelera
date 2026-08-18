@@ -1,0 +1,10 @@
+.caja_turno__contenedor {
+  width: 100%;
+}
+
+.caja_turno__contenedor__accion:focus-visible,
+.caja_turno__contenedor button:focus-visible,
+.caja_turno__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}

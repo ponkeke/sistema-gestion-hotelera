@@ -1,0 +1,15 @@
+:root {
+  --color_dorado: #b08d47;
+  --color_dorado_claro: #c9a34e;
+  --color_negro: #0b0b0d;
+  --color_negro_suave: #171717;
+  --color_crema: #f7f3ea;
+  --color_blanco: #fffdf8;
+  --color_borde: #ded6c9;
+  --color_error: #b42318;
+  --color_exito: #246b4a;
+  --ancho_menu: 252px;
+  --radio_pequeno: 8px;
+  --radio_mediano: 12px;
+  --radio_grande: 16px;
+}
