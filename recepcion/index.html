@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hotel Raymi: habitaciones cómodas, atención cercana y reserva directa." />
+    <title>Hotel Raymi | Tu pausa empieza aquí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <a class="cabecera__marca" href="#inicio" aria-label="Ir al inicio">
+        <img class="cabecera__logo" src="img/publico/logo-raymi.png" alt="Hotel Raymi" />
+      </a>
+
+      <nav class="cabecera__navegacion" aria-label="Navegación principal">
+        <a class="cabecera__enlace cabecera__enlace--activo" href="#inicio">Inicio</a>
+        <a class="cabecera__enlace" href="#habitaciones">Habitaciones</a>
+        <a class="cabecera__enlace" href="#promociones">Promociones</a>
+        <a class="cabecera__enlace" href="#servicios">Servicios</a>
+        <a class="cabecera__enlace" href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="boton cabecera__boton" href="#disponibilidad">Reservar ahora</a>
+    </header>
+
+    <main>
+      <section class="portada" id="inicio">
+        <div class="portada__contenedor">
+          <div class="portada__contenido">
+            <span class="portada__etiqueta">Estadías pensadas para respirar</span>
+            <h1 class="portada__titulo">Tu pausa empieza<br />mucho antes de llegar.</h1>
+            <p class="portada__descripcion">Habitaciones cómodas, atención cercana y reserva directa con disponibilidad real.</p>
+            <a class="boton portada__boton" href="#habitaciones">Ver habitaciones</a>
+          </div>
+
+          <div class="portada__imagen_contenedor">
+            <img class="portada__imagen" src="img/publico/habitacion-portada.png" alt="Habitación amplia y elegante del Hotel Raymi" />
+          </div>
+        </div>
+      </section>
+
+      <section class="disponibilidad" id="disponibilidad" aria-label="Buscar disponibilidad">
+        <label class="disponibilidad__campo">
+          <span>Entrada</span>
+          <input type="date" value="2026-07-22" />
+        </label>
+
+        <label class="disponibilidad__campo">
+          <span>Salida</span>
+          <input type="date" value="2026-07-24" />
+        </label>
+
+        <label class="disponibilidad__campo">
+          <span>Huéspedes</span>
+          <select>
+            <option>1 adulto</option>
+            <option selected>2 adultos</option>
+            <option>2 adultos, 1 niño</option>
+            <option>Familia</option>
+          </select>
+        </label>
+
+        <a class="boton disponibilidad__boton" href="#habitaciones">Buscar disponibilidad</a>
+      </section>
+
+      <section class="experiencia" id="habitaciones">
+        <h2 class="experiencia__titulo">Una experiencia completa</h2>
+
+        <div class="experiencia__lista">
+          <article class="beneficio beneficio--destacado">
+            <img class="beneficio__icono" src="img/publico/icono-habitaciones.svg" alt="" />
+            <h3>Habitaciones</h3>
+            <p>Descubre tu espacio ideal</p>
+          </article>
+
+          <article class="beneficio" id="promociones">
+            <img class="beneficio__icono" src="img/publico/icono-promociones.svg" alt="" />
+            <h3>Promociones</h3>
+            <p>Explora antes de reservar</p>
+          </article>
+
+          <article class="beneficio" id="servicios">
+            <img class="beneficio__icono" src="img/publico/icono-servicios.svg" alt="" />
+            <h3>Servicios</h3>
+            <p>Explora antes de reservar</p>
+          </article>
+
+          <article class="beneficio" id="contacto">
+            <img class="beneficio__icono" src="img/publico/icono-ubicacion.svg" alt="" />
+            <h3>Ubicación</h3>
+            <p>Explora antes de reservar</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

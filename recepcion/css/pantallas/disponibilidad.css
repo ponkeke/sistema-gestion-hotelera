@@ -1,0 +1,10 @@
+.reserva_disponibilidad__contenedor {
+  width: 100%;
+}
+
+.reserva_disponibilidad__contenedor__accion:focus-visible,
+.reserva_disponibilidad__contenedor button:focus-visible,
+.reserva_disponibilidad__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}

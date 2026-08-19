@@ -1,0 +1,59 @@
+.campo--error input,
+.campo--error select,
+.campo--error textarea {
+  border-color: var(--color_error) !important;
+  box-shadow: 0 0 0 3px rgba(180, 35, 24, 0.12) !important;
+}
+
+.campo__mensaje_error {
+  display: block;
+  margin-top: 6px;
+  color: var(--color_error);
+  font-size: 10px;
+}
+
+.mensaje_sistema {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 100;
+  width: min(360px, calc(100% - 48px));
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: var(--color_negro_suave);
+  color: var(--color_blanco);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+}
+
+.mensaje_sistema--error {
+  background: var(--color_error);
+}
+
+.mensaje_sistema--exito {
+  background: var(--color_exito);
+}
+
+.elemento_oculto {
+  display: none !important;
+}
+
+.fila_seleccionada {
+  outline: 2px solid var(--color_dorado);
+  outline-offset: -2px;
+  background: #fff9eb !important;
+}
+
+.boton_cargando {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.resultado_vacio {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px dashed var(--color_borde);
+  border-radius: 12px;
+  text-align: center;
+  color: #746f66;
+}

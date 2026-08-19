@@ -1,0 +1,10 @@
+.reserva_pago__contenedor {
+  width: 100%;
+}
+
+.reserva_pago__contenedor__accion:focus-visible,
+.reserva_pago__contenedor button:focus-visible,
+.reserva_pago__contenedor a:focus-visible {
+  outline: 3px solid rgba(176, 141, 71, 0.45);
+  outline-offset: 3px;
+}
