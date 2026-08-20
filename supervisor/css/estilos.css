@@ -1,0 +1,25 @@
+@import url("../../administrador/css/estilos.css");
+
+.panel_supervisor { min-height: 100vh; padding-left: var(--ancho_menu); }
+.franja_ranking { margin-top: 16px; padding: 13px 22px; border-radius: 8px; background: var(--color_negro); color: #fff; display: flex; justify-content: space-between; gap: 20px; font-size: 11px; }
+.franja_ranking span:last-child { color: var(--color_dorado_claro); }
+.reportes_detalle { margin-top: 16px; display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(280px, .7fr); gap: 24px; }
+.grafico, .metodos_pago { min-height: 390px; padding: 22px; border: 1px solid var(--color_borde); border-radius: 16px; background: #fff; }
+.grafico h2, .metodos_pago h2 { font-size: 16px; }
+.grafico small { margin-top: 6px; display: block; color: var(--color_texto_suave); font-size: 9px; }
+.grafico__barras { height: 290px; margin-top: 22px; padding: 0 15px 26px; border-bottom: 1px solid var(--color_borde); display: flex; align-items: end; justify-content: space-around; gap: 12px; }
+.grafico__barra { width: 28px; height: var(--altura); border-radius: 7px 7px 0 0; background: #e9e1d3; position: relative; transition: height .3s ease; }
+.grafico__barra:nth-child(3n), .grafico__barra:last-child { background: var(--color_dorado); }
+.grafico__barra span { position: absolute; left: 50%; bottom: -23px; transform: translateX(-50%); color: var(--color_texto_suave); font-size: 9px; }
+.metodos_pago { border-color: var(--color_negro); background: var(--color_negro); color: #fff; }
+.metodos_pago__lista { margin-top: 28px; display: grid; gap: 25px; }
+.metodo_pago__encabezado { margin-bottom: 9px; display: flex; justify-content: space-between; font-size: 10px; }
+.metodo_pago__barra { height: 8px; border-radius: 8px; background: #222; overflow: hidden; }
+.metodo_pago__barra i { width: var(--porcentaje); height: 100%; display: block; border-radius: inherit; background: var(--color_dorado); }
+.metodo_pago:nth-child(2) i { background: #346bd1; }
+.metodo_pago:nth-child(3) i { background: #7951bc; }
+.metodo_pago:nth-child(4) i { background: #a85d09; }
+.metodo_pago:nth-child(5) i { background: #bcc8cb; }
+
+@media (max-width: 900px) { .reportes_detalle { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .panel_supervisor { padding-left: 0; } .franja_ranking { flex-direction: column; } .grafico__barras { gap: 5px; padding-inline: 0; } .grafico__barra { width: 18px; } }

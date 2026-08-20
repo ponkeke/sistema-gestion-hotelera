@@ -14,9 +14,16 @@ formulario?.addEventListener("submit", (evento) => {
         );
 
   if (!correoValido || !claveValida) return;
-  sessionStorage.setItem("sesion_recepcion", "activa");
-  mostrarMensaje("Acceso correcto. Abriendo el dashboard...", "exito");
-  window.setTimeout(() => (window.location.href = "dashboard.html"), 500);
+  const rol = formulario.elements.rol.value;
+  const destinos = {
+    recepcion: "dashboard.html",
+    supervisor: "../../supervisor/index.html",
+    administrador: "../../administrador/index.html",
+  };
+  sessionStorage.setItem("sesion_hotel", "activa");
+  sessionStorage.setItem("rol_hotel", rol);
+  mostrarMensaje(`Acceso correcto como ${rol}.`, "exito");
+  window.setTimeout(() => (window.location.href = destinos[rol]), 500);
 });
 
 document
