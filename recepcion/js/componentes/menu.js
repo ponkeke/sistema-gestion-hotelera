@@ -1,18 +1,20 @@
 const botonMenu = document.getElementById("boton-menu");
 const menuLateral = document.getElementById("barra-lateral");
 
-botonMenu?.addEventListener("click", () => {
-  menuLateral?.classList.toggle("visible");
-});
+const destinosMenu = {
+  Reportes: "../../supervisor/index.html",
+  Personal: "../../administrador/index.html",
+  Catálogos: "../../administrador/catalogos.html",
+  Configuración: "configuracion.html",
+};
 
 document.querySelectorAll('a[href="#"]').forEach((enlace) => {
-  enlace.addEventListener("click", (evento) => {
-    evento.preventDefault();
-    window.mostrarMensaje?.(
-      enlace.textContent.trim() +
-        ": módulo pendiente para el siguiente avance.",
-    );
-  });
+  const destino = destinosMenu[enlace.textContent.trim()];
+  if (destino) enlace.href = destino;
+});
+
+botonMenu?.addEventListener("click", () => {
+  menuLateral?.classList.toggle("visible");
 });
 
 document.querySelectorAll(".boton-icono").forEach((boton) => {
@@ -22,8 +24,9 @@ document.querySelectorAll(".boton-icono").forEach((boton) => {
 });
 
 document.querySelector(".tarjeta-perfil")?.addEventListener("click", () => {
+  alert("Perfil activo: Recepción\nUsuario: Camila Ríos\nTurno: Mañana");
   const cerrar = confirm("¿Deseas cerrar la sesión de Recepción?");
   if (!cerrar) return;
-  sessionStorage.removeItem("sesion_recepcion");
+  sessionStorage.clear();
   window.location.href = "login.html";
 });

@@ -74,6 +74,36 @@ document.querySelectorAll(".pestanas__boton").forEach((boton) => {
 
 document.querySelector("[data-cerrar-sesion]")?.addEventListener("click", (evento) => {
   evento.preventDefault();
+  alert("Perfil activo: Ana Torres\nRol: Administrador");
+  if (!confirm("¿Deseas cerrar la sesión del Administrador?")) return;
   sessionStorage.clear();
   window.location.href = "../recepcion/html/login.html";
 });
+
+document.querySelector("[data-perfil]")?.addEventListener("click", () => {
+  alert("Perfil activo: Ana Torres\nRol: Administrador\nPermisos: configuración total");
+});
+
+const formularioConfiguracion = document.querySelector("[data-configuracion]");
+if (formularioConfiguracion && window.DatosHotel) {
+  const cargarConfiguracion = () => {
+    const configuracion = DatosHotel.obtenerConfiguracion();
+    Object.entries(configuracion).forEach(([nombre, valor]) => {
+      if (formularioConfiguracion.elements[nombre]) formularioConfiguracion.elements[nombre].value = valor;
+    });
+  };
+  formularioConfiguracion.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    const configuracion = Object.fromEntries(new FormData(formularioConfiguracion));
+    configuracion.cantidad_huespedes = Number(configuracion.cantidad_huespedes);
+    DatosHotel.guardarConfiguracion(configuracion);
+    mostrarMensajeAdministrador("Configuración guardada correctamente.");
+  });
+  document.querySelector("[data-reiniciar-datos]")?.addEventListener("click", () => {
+    if (!confirm("¿Restaurar habitaciones, huéspedes y reservas de demostración?")) return;
+    DatosHotel.reiniciar();
+    cargarConfiguracion();
+    mostrarMensajeAdministrador("Datos de demostración reiniciados.");
+  });
+  cargarConfiguracion();
+}

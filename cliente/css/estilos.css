@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root { --dorado:#c9a34e; --dorado_oscuro:#b08d47; --negro:#0b0b0d; --crema:#f7f3ea; --blanco:#fffdf8; --borde:#ded6c9; --texto:#605b52; --suave:#8a8479; --exito:#246b4a; --error:#b42318; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { min-width:320px; min-height:100vh; background:var(--crema); color:var(--negro); font-family:"Manrope",sans-serif; }
+a { color:inherit; text-decoration:none; }
+img { display:block; max-width:100%; }
+button,input,select { font:inherit; }
+button { cursor:pointer; }
+.cabecera_publica { height:84px; padding:0 20px; position:sticky; top:0; z-index:30; border:1px solid var(--borde); background:var(--negro); color:#fff; display:grid; grid-template-columns:180px 1fr 180px; align-items:center; }
+.cabecera_publica__logo { width:126px; height:44px; object-fit:contain; }
+.cabecera_publica__menu { display:flex; justify-content:center; gap:clamp(35px,7vw,105px); }
+.cabecera_publica__menu a { font-size:11px; font-weight:500; }
+.cabecera_publica__menu a:hover,.cabecera_publica__menu .activo { color:var(--dorado); }
+.boton { min-height:43px; padding:12px 16px; border:1px solid var(--dorado); border-radius:8px; background:var(--dorado); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; }
+.boton:hover { background:var(--dorado_oscuro); }
+.boton--secundario { border-color:var(--borde); background:#fff; color:var(--negro); }
+.cabecera_publica>.boton { justify-self:end; }
+.contenedor_publico { width:min(1296px,calc(100% - 48px)); margin:0 auto; }
+.titulo_publico { padding-top:48px; }
+.titulo_publico h1 { font-family:"Cormorant Garamond",serif; font-size:38px; line-height:44px; }
+.titulo_publico p { margin-top:12px; color:#746f66; font-size:14px; }
+.filtros_habitaciones { margin-top:30px; display:flex; flex-wrap:wrap; gap:16px; }
+.filtro_habitacion { min-width:132px; height:40px; border:1px solid var(--borde); border-radius:999px; background:#fff; color:var(--texto); font-size:10px; font-weight:600; }
+.filtro_habitacion--activo { border-color:var(--negro); background:var(--negro); color:#fff; }
+.lista_habitaciones { margin-top:40px; display:grid; grid-template-columns:repeat(3,1fr); gap:28px 32px; }
+.tarjeta_habitacion { padding:12px 12px 14px; border:1px solid var(--borde); border-radius:18px; background:#fff; }
+.tarjeta_habitacion[hidden] { display:none; }
+.tarjeta_habitacion__imagen { height:130px; border-radius:12px; position:relative; overflow:hidden; background-image:url("../img/habitaciones.png"); background-size:200% 200%; background-position:var(--posicion); }
+.tarjeta_habitacion__numero { position:absolute; top:18px; left:20px; font-family:"Cormorant Garamond",serif; font-size:28px; font-weight:700; }
+.tarjeta_habitacion h2 { margin:16px 8px 0; font-size:17px; }
+.tarjeta_habitacion p { margin:7px 8px 0; color:#746f66; font-size:10px; }
+.tarjeta_habitacion__pie { margin:14px 8px 0; display:flex; justify-content:space-between; align-items:center; gap:15px; }
+.tarjeta_habitacion__precio { color:#8f6f30; font-size:15px; font-weight:700; }
+.promocion_publica { margin:38px 0 12px; padding:14px 24px; border-radius:10px; background:var(--negro); color:#fff; font-size:11px; }
+.reserva_diseno { padding-bottom:60px; display:grid; grid-template-columns:minmax(0,780px) minmax(320px,476px); gap:40px; align-items:start; }
+.formulario_reserva { margin-top:40px; padding:24px; border:1px solid var(--borde); border-radius:18px; background:#fff; display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.formulario_reserva h2,.formulario_reserva h3 { grid-column:1/-1; font-size:18px; }
+.formulario_reserva h3 { margin-top:10px; font-size:13px; }
+.campo_publico { display:grid; gap:10px; color:#746f66; font-size:10px; font-weight:600; }
+.campo_publico input,.campo_publico select { width:100%; min-height:50px; padding:0 14px; border:1px solid var(--borde); border-radius:8px; background:var(--crema); outline:none; }
+.campo_publico input:focus,.campo_publico select:focus { border-color:var(--dorado); box-shadow:0 0 0 3px rgba(176,141,71,.14); }
+.campo_publico--completo,.metodos_garantia,.aceptar_condiciones { grid-column:1/-1; }
+.metodos_garantia { display:flex; flex-wrap:wrap; gap:16px; }
+.metodo_garantia { min-width:164px; min-height:74px; padding:0 16px; border:1px solid var(--borde); border-radius:12px; background:#fff; display:flex; align-items:center; gap:12px; font-size:12px; font-weight:600; }
+.metodo_garantia--activo { border:2px solid var(--dorado_oscuro); background:#fbf6ea; color:#755b28; }
+.metodo_garantia img { width:20px; height:20px; }
+.aceptar_condiciones { display:flex; align-items:center; gap:10px; color:var(--texto); font-size:10px; }
+.resumen_reserva { margin-top:40px; padding:24px; border-radius:18px; background:var(--negro); color:#fff; }
+.resumen_reserva>span { color:#e7d8b2; font-size:9px; text-transform:uppercase; }
+.resumen_reserva h2 { margin-top:14px; font-family:"Cormorant Garamond",serif; font-size:24px; }
+.resumen_reserva__imagen { height:120px; margin-top:16px; border-radius:12px; background:linear-gradient(158deg,#fffdf8 14%,#e7d4a6 86%); }
+.resumen_reserva__fila { margin-top:26px; display:flex; justify-content:space-between; color:#e8e0d2; font-size:11px; }
+.resumen_reserva__total { margin-top:34px; padding-top:24px; border-top:1px solid #2a251e; }
+.resumen_reserva__total span { color:#e7d8b2; font-size:9px; }
+.resumen_reserva__total strong { margin-top:10px; display:block; font-family:"Cormorant Garamond",serif; font-size:30px; }
+.confirmar_reserva { width:100%; margin-top:36px; min-height:51px; }
+.confirmacion { min-height:calc(100vh - 84px); padding:66px 20px; display:grid; place-items:start center; }
+.confirmacion__tarjeta { width:min(700px,100%); padding:54px 56px 60px; border-radius:18px; background:#fff; text-align:center; box-shadow:0 18px 40px rgba(11,11,13,.1); }
+.confirmacion__icono { width:104px; height:104px; margin:auto; padding:32px; border-radius:50%; background:#eaf7f0; }
+.confirmacion h1 { margin-top:34px; font-family:"Cormorant Garamond",serif; font-size:30px; }
+.confirmacion__correo { margin-top:10px; color:var(--suave); font-size:11px; }
+.confirmacion__datos { margin-top:40px; padding:20px; border-radius:14px; background:var(--crema); display:grid; grid-template-columns:1fr 1fr; gap:34px; text-align:left; }
+.confirmacion__dato span,.confirmacion__dato strong { display:block; }
+.confirmacion__dato span { color:var(--suave); font-size:8px; text-transform:uppercase; }
+.confirmacion__dato strong { margin-top:10px; font-size:12px; }
+.confirmacion .boton { margin-top:48px; }
+.mensaje_publico { padding:12px 18px; position:fixed; right:24px; bottom:24px; z-index:80; border-radius:10px; background:var(--negro); color:#fff; font-size:12px; }
+.portada_hotel{min-height:610px;padding:70px 7%;display:flex;align-items:center;background:linear-gradient(90deg,rgba(11,11,13,.92),rgba(11,11,13,.25)),url("../img/habitacion-portada.png") center/cover;color:#fff}.portada_hotel__contenido{width:min(720px,100%)}.portada_hotel span{color:var(--dorado);font-size:11px;letter-spacing:3px}.portada_hotel h1{max-width:680px;margin-top:18px;font:700 clamp(44px,6vw,76px)/.95 "Cormorant Garamond",serif}.portada_hotel p{margin-top:22px;color:#eee;font-size:15px}.buscador_estadia{width:min(900px,90vw);margin-top:48px;padding:16px;border-radius:14px;background:#fff;color:var(--negro);display:grid;grid-template-columns:1fr 1fr 130px auto;gap:12px}.buscador_estadia label{display:grid;gap:6px;color:var(--suave);font-size:9px;text-transform:uppercase}.buscador_estadia input{min-height:36px;border:0;border-bottom:1px solid var(--borde);outline:0}.seccion_beneficios{padding:70px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.seccion_beneficios article{padding:28px;border:1px solid var(--borde);border-radius:16px;background:#fff}.seccion_beneficios img{width:34px;height:34px}.seccion_beneficios h2{margin-top:20px;font-size:17px}.seccion_beneficios p{margin-top:10px;color:var(--texto);font-size:12px;line-height:1.7}.pie_publico{padding:30px 4%;background:var(--negro);color:#fff;display:flex;justify-content:space-between;gap:20px;font-size:11px}.pie_publico a{color:var(--dorado)}
+@media(max-width:900px){.cabecera_publica{grid-template-columns:1fr auto}.cabecera_publica__menu{display:none}.lista_habitaciones{grid-template-columns:repeat(2,1fr)}.reserva_diseno{grid-template-columns:1fr}.resumen_reserva{order:-1}.resumen_reserva__imagen{display:none}}
+@media(max-width:900px){.buscador_estadia{grid-template-columns:1fr 1fr}.seccion_beneficios{grid-template-columns:1fr}.portada_hotel{min-height:680px}}
+@media(max-width:600px){.cabecera_publica{height:72px;padding:0 14px}.cabecera_publica__logo{width:105px}.cabecera_publica>.boton{padding:9px 12px;font-size:11px}.contenedor_publico{width:calc(100% - 28px)}.lista_habitaciones{grid-template-columns:1fr}.formulario_reserva{grid-template-columns:1fr;padding:20px}.formulario_reserva>*{grid-column:auto}.confirmacion{min-height:calc(100vh - 72px)}.confirmacion__tarjeta{padding:38px 22px}.confirmacion__datos{grid-template-columns:1fr}.titulo_publico h1{font-size:34px}.buscador_estadia{width:100%;grid-template-columns:1fr}.portada_hotel{padding:55px 20px}.pie_publico{flex-direction:column}}

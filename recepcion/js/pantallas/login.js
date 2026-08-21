@@ -19,6 +19,7 @@ formulario?.addEventListener("submit", (evento) => {
     recepcion: "dashboard.html",
     supervisor: "../../supervisor/index.html",
     administrador: "../../administrador/index.html",
+    limpieza: "../../limpieza/index.html",
   };
   sessionStorage.setItem("sesion_hotel", "activa");
   sessionStorage.setItem("rol_hotel", rol);

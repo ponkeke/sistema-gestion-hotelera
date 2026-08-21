@@ -40,6 +40,8 @@ document.querySelector("#exportar_reporte")?.addEventListener("click", () => {
 
 document.querySelector("[data-cerrar-sesion]")?.addEventListener("click", (evento) => {
   evento.preventDefault();
+  alert("Perfil activo: Jorge Vega\nRol: Supervisor\nPermisos: reportes y control de operación");
+  if (!confirm("¿Deseas cerrar la sesión del Supervisor?")) return;
   sessionStorage.clear();
   window.location.href = "../recepcion/html/login.html";
 });
