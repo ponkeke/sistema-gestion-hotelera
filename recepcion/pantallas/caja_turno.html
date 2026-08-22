@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>check in | Hotel Raymi</title>
+    <title>caja turno | Hotel Raymi</title>
 
     <link rel="stylesheet" href="../css/base/variables.css" />
     <link rel="stylesheet" href="../css/base/reset.css" />
     <link rel="stylesheet" href="../css/base/tipografia.css" />
     <link rel="stylesheet" href="../css/componentes/interfaz.css" />
     <link rel="stylesheet" href="../css/componentes/funcionalidad.css" />
-    <link rel="stylesheet" href="../css/pantallas/check_in.css" />
+    <link rel="stylesheet" href="../css/pantallas/caja_turno.css" />
     <link rel="stylesheet" href="../css/adaptable.css" />
   </head>
-  <body data-pantalla="check-in" class="hospedaje_ingreso">
-    <div id="aplicacion" class="hospedaje_ingreso__contenedor">
+  <body data-rol-requerido="recepcion" data-pantalla="caja-turno" class="caja_turno">
+    <div id="aplicacion" class="caja_turno__contenedor">
       <aside class="barra-lateral menu__contenedor" id="barra-lateral">
         <a class="marca menu__contenedor__marca" href="dashboard.html"
-          ><img src="../img/check_in/logo-raymi.png" alt="Hotel Raymi"
+          ><img src="../img/caja_turno/logo-raymi.png" alt="Hotel Raymi"
         /></a>
         <section class="tarjeta-propiedad menu__contenedor__propiedad">
           <span>Propiedad</span><strong>Hotel Huancayo</strong>
@@ -29,42 +29,42 @@
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="dashboard.html"
           >
-            <img src="../img/check_in/icono-inicio.svg" alt="" />
+            <img src="../img/caja_turno/icono-inicio.svg" alt="" />
             <span>Inicio</span>
           </a>
           <a
-            class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="disponibilidad.html"
           >
-            <img src="../img/check_in/icono-calendario.svg" alt="" />
+            <img src="../img/caja_turno/icono-calendario.svg" alt="" />
             <span>Reservas</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="habitaciones.html"
           >
-            <img src="../img/check_in/icono-habitaciones.svg" alt="" />
+            <img src="../img/caja_turno/icono-habitaciones.svg" alt="" />
             <span>Habitaciones</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="cliente_dni.html"
           >
-            <img src="../img/check_in/icono-usuario.svg" alt="" />
+            <img src="../img/caja_turno/icono-usuario.svg" alt="" />
             <span>Huéspedes</span>
           </a>
           <a
-            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
             href="caja_turno.html"
           >
-            <img src="../img/check_in/icono-cartera.svg" alt="" />
+            <img src="../img/caja_turno/icono-cartera.svg" alt="" />
             <span>Caja y turnos</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/check_in/icono-reporte.svg" alt="" />
+            <img src="../img/caja_turno/icono-reporte.svg" alt="" />
             <span>Reportes</span>
           </a>
           <p class="titulo-navegacion titulo-administracion">Administración</p>
@@ -73,21 +73,21 @@
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/check_in/icono-usuario.svg" alt="" />
+            <img src="../img/caja_turno/icono-usuario.svg" alt="" />
             <span>Personal</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/check_in/icono-caja.svg" alt="" />
+            <img src="../img/caja_turno/icono-caja.svg" alt="" />
             <span>Catálogos</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/check_in/icono-configuracion.svg" alt="" />
+            <img src="../img/caja_turno/icono-configuracion.svg" alt="" />
             <span>Configuración</span>
           </a>
         </nav>
@@ -110,77 +110,76 @@
             ☰
           </button>
           <div class="titulo-barra">
-            <strong>Reservas</strong><span>Miércoles, 22 de julio</span>
+            <strong>Caja y turnos</strong><span>Miércoles, 22 de julio</span>
           </div>
           <div class="acciones-barra">
             <span class="etiqueta-rol">Recepción</span
             ><button class="boton-icono" aria-label="Notificaciones">
-              <img src="../img/check_in/icono-campana.svg" alt="" /></button
+              <img src="../img/caja_turno/icono-campana.svg" alt="" /></button
             ><span class="avatar-superior">RE</span>
           </div>
         </header>
-        <div class="contenido-pagina hospedaje_ingreso__contenedor__contenido">
+        <div class="contenido-pagina caja_turno__contenedor__contenido">
           <section class="encabezado-pagina">
             <div>
-              <h1>Registrar check-in</h1>
-              <p>Confirma la llegada e inicia la cuenta del huésped.</p>
+              <h1>Caja y cambio de turno</h1>
+              <p>Apertura, conciliación y pendientes en un mismo lugar.</p>
             </div>
           </section>
-          <article class="tarjeta resumen-huesped">
-            <span>Reserva RES-00241</span>
-            <h2>Valeria Méndez Rojas</h2>
-            <dl>
-              <div>
-                <dt>Habitación</dt>
-                <dd>204 · Suite Deluxe</dd>
-              </div>
-              <div>
-                <dt>Ingreso</dt>
-                <dd>22 jul · 14:00</dd>
-              </div>
-              <div>
-                <dt>Salida</dt>
-                <dd>24 jul · 12:00</dd>
-              </div>
-              <div>
-                <dt>Estado de pago</dt>
-                <dd class="texto-verde">Pagado</dd>
-              </div>
-            </dl>
-          </article>
-          <section class="cuadricula-checkin">
-            <form class="tarjeta formulario-checkin">
-              <h2>Confirmación de ingreso</h2>
-              <label class="campo"
-                ><span>Fecha y hora</span
-                ><input
-                  type="datetime-local"
-                  name="fecha-checkin"
-                  value="2026-07-22T14:07" /></label
-              ><label class="campo"
-                ><span>Observaciones</span
-                ><textarea name="observaciones">
-El huésped solicita habitación silenciosa.</textarea
-                >
-              </label>
-            </form>
-            <aside class="tarjeta-oscura cuenta-inicial">
-              <span>Cuenta inicial</span><strong>S/ 0.00</strong
-              ><small>Saldo pendiente después del pago total.</small>
-              <hr />
-              <p>Al confirmar:</p>
-              <ul>
-                <li>Habitación → Ocupada</li>
-                <li>Cuenta habilitada</li>
-                <li>Consumos disponibles</li>
-              </ul>
+          <section class="cuadricula-caja">
+            <article class="indicador">
+              <span>Apertura de caja</span><strong>S/ 450.00</strong
+              ><small>08:02 · Monto inicial</small>
+            </article>
+            <article class="indicador">
+              <span>Ventas del turno</span><strong>S/ 4,860.00</strong
+              ><small>32 operaciones</small>
+            </article>
+            <article class="indicador">
+              <span>Pendientes</span><strong>S/ 386.00</strong
+              ><small>3 reservas</small>
+            </article>
+          </section>
+          <section class="cuadricula-cierre">
+            <article class="tarjeta cierre-caja">
+              <h2>Cierre de caja</h2>
+              <dl>
+                <div>
+                  <dt>Efectivo esperado</dt>
+                  <dd>S/ 2,740.00</dd>
+                </div>
+                <div>
+                  <dt>Efectivo contado</dt>
+                  <dd>
+                    <input
+                      type="number"
+                      value="2738.00"
+                      aria-label="Efectivo contado"
+                    />
+                  </dd>
+                </div>
+                <div>
+                  <dt>Diferencia</dt>
+                  <dd class="texto-rojo">− S/ 2.00</dd>
+                </div>
+              </dl>
+              <label class="nota-cierre"
+                >La diferencia está dentro del margen permitido.
+                <input
+                  type="text"
+                  placeholder="Agrega una observación antes de cerrar"
+              /></label>
+            </article>
+            <aside class="tarjeta-oscura cambio-turno">
+              <span>Cambio de turno</span>
+              <h2>Camila → Diego</h2>
+              <p>Pendientes a comunicar</p>
+              <label><input value="RES-00258 · pago parcial" /></label
+              ><label><input value="Hab. 118 · en limpieza" /></label
+              ><label><input value="Cochera C-04 · ocupada" /></label
+              ><button class="boton-principal">Registrar entrega</button>
             </aside>
           </section>
-          <div class="acciones-finales">
-            <a class="boton-principal" href="cuenta_huesped.html"
-              >Registrar check-in</a
-            >
-          </div>
         </div>
       </main>
     </div>
@@ -189,6 +188,6 @@ El huésped solicita habitación silenciosa.</textarea
     <script src="../js/componentes/validaciones.js"></script>
     <script src="../js/componentes/comun.js"></script>
     <script src="../js/componentes/menu.js"></script>
-    <script src="../js/pantallas/check_in.js"></script>
-  </body>
+    <script src="../js/pantallas/caja_turno.js"></script>
+  <script src="../../compartido/sesion.js"></script></body>
 </html>

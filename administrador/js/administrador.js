@@ -77,7 +77,7 @@ document.querySelector("[data-cerrar-sesion]")?.addEventListener("click", (event
   alert("Perfil activo: Ana Torres\nRol: Administrador");
   if (!confirm("¿Deseas cerrar la sesión del Administrador?")) return;
   sessionStorage.clear();
-  window.location.href = "../recepcion/html/login.html";
+  window.location.href = "../../acceso/index.html";
 });
 
 document.querySelector("[data-perfil]")?.addEventListener("click", () => {

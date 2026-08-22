@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cliente dni | Hotel Raymi</title>
+    <title>check in | Hotel Raymi</title>
 
     <link rel="stylesheet" href="../css/base/variables.css" />
     <link rel="stylesheet" href="../css/base/reset.css" />
     <link rel="stylesheet" href="../css/base/tipografia.css" />
     <link rel="stylesheet" href="../css/componentes/interfaz.css" />
     <link rel="stylesheet" href="../css/componentes/funcionalidad.css" />
-    <link rel="stylesheet" href="../css/pantallas/cliente_dni.css" />
+    <link rel="stylesheet" href="../css/pantallas/check_in.css" />
     <link rel="stylesheet" href="../css/adaptable.css" />
   </head>
-  <body data-pantalla="cliente-dni" class="reserva_huesped">
-    <div id="aplicacion" class="reserva_huesped__contenedor">
+  <body data-rol-requerido="recepcion" data-pantalla="check-in" class="hospedaje_ingreso">
+    <div id="aplicacion" class="hospedaje_ingreso__contenedor">
       <aside class="barra-lateral menu__contenedor" id="barra-lateral">
         <a class="marca menu__contenedor__marca" href="dashboard.html"
-          ><img src="../img/cliente_dni/logo-raymi.png" alt="Hotel Raymi"
+          ><img src="../img/check_in/logo-raymi.png" alt="Hotel Raymi"
         /></a>
         <section class="tarjeta-propiedad menu__contenedor__propiedad">
           <span>Propiedad</span><strong>Hotel Huancayo</strong>
@@ -29,42 +29,42 @@
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="dashboard.html"
           >
-            <img src="../img/cliente_dni/icono-inicio.svg" alt="" />
+            <img src="../img/check_in/icono-inicio.svg" alt="" />
             <span>Inicio</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
             href="disponibilidad.html"
           >
-            <img src="../img/cliente_dni/icono-calendario.svg" alt="" />
+            <img src="../img/check_in/icono-calendario.svg" alt="" />
             <span>Reservas</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="habitaciones.html"
           >
-            <img src="../img/cliente_dni/icono-habitaciones.svg" alt="" />
+            <img src="../img/check_in/icono-habitaciones.svg" alt="" />
             <span>Habitaciones</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="cliente_dni.html"
           >
-            <img src="../img/cliente_dni/icono-usuario.svg" alt="" />
+            <img src="../img/check_in/icono-usuario.svg" alt="" />
             <span>Huéspedes</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="caja_turno.html"
           >
-            <img src="../img/cliente_dni/icono-cartera.svg" alt="" />
+            <img src="../img/check_in/icono-cartera.svg" alt="" />
             <span>Caja y turnos</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/cliente_dni/icono-reporte.svg" alt="" />
+            <img src="../img/check_in/icono-reporte.svg" alt="" />
             <span>Reportes</span>
           </a>
           <p class="titulo-navegacion titulo-administracion">Administración</p>
@@ -73,21 +73,21 @@
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/cliente_dni/icono-usuario.svg" alt="" />
+            <img src="../img/check_in/icono-usuario.svg" alt="" />
             <span>Personal</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/cliente_dni/icono-caja.svg" alt="" />
+            <img src="../img/check_in/icono-caja.svg" alt="" />
             <span>Catálogos</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/cliente_dni/icono-configuracion.svg" alt="" />
+            <img src="../img/check_in/icono-configuracion.svg" alt="" />
             <span>Configuración</span>
           </a>
         </nav>
@@ -115,75 +115,72 @@
           <div class="acciones-barra">
             <span class="etiqueta-rol">Recepción</span
             ><button class="boton-icono" aria-label="Notificaciones">
-              <img src="../img/cliente_dni/icono-campana.svg" alt="" /></button
+              <img src="../img/check_in/icono-campana.svg" alt="" /></button
             ><span class="avatar-superior">RE</span>
           </div>
         </header>
-        <div class="contenido-pagina reserva_huesped__contenedor__contenido">
+        <div class="contenido-pagina hospedaje_ingreso__contenedor__contenido">
           <section class="encabezado-pagina">
             <div>
-              <h1>Identificar huésped</h1>
-              <p>Paso 2 de 4 · Busca por DNI o registra un cliente.</p>
+              <h1>Registrar check-in</h1>
+              <p>Confirma la llegada e inicia la cuenta del huésped.</p>
             </div>
           </section>
-          <ol class="pasos-reserva">
-            <li class="completado"><b>1</b><span>Disponibilidad</span></li>
-            <li class="activo"><b>2</b><span>Huésped</span></li>
-            <li class=""><b>3</b><span>Configuración</span></li>
-            <li class=""><b>4</b><span>Pago</span></li>
-          </ol>
-          <form class="tarjeta buscador-dni">
-            <h2>Documento de identidad</h2>
-            <label class="campo"
-              ><span>Buscar</span
-              ><input
-                type="search"
-                name="dni"
-                value="72845196"
-                maxlength="8" /></label
-            ><button class="boton-secundario">Buscar cliente</button
-            ><small>Búsqueda local · formato de 8 dígitos</small>
-          </form>
-          <section class="cuadricula-cliente">
-            <article class="tarjeta datos-cliente">
-              <h2>Cliente encontrado</h2>
-              <div class="identidad-cliente">
-                <span class="avatar-cliente">VM</span>
-                <div>
-                  <strong>Valeria Méndez Rojas</strong
-                  ><small>DNI 72845196 · Cliente desde 2024</small>
-                </div>
+          <article class="tarjeta resumen-huesped">
+            <span>Reserva RES-00241</span>
+            <h2>Valeria Méndez Rojas</h2>
+            <dl>
+              <div>
+                <dt>Habitación</dt>
+                <dd>204 · Suite Deluxe</dd>
               </div>
-              <dl>
-                <div>
-                  <dt>Teléfono</dt>
-                  <dd>+51 987 245 612</dd>
-                </div>
-                <div>
-                  <dt>Correo</dt>
-                  <dd>valeria.mendez@email.com</dd>
-                </div>
-                <div>
-                  <dt>Visitas</dt>
-                  <dd>6 hospedajes</dd>
-                </div>
-                <div>
-                  <dt>Preferencia</dt>
-                  <dd>Habitaciones silenciosas</dd>
-                </div>
-              </dl>
-            </article>
-            <aside>
-              <article class="tarjeta-oscura tarjeta-frecuente">
-                <span>Cliente frecuente</span><strong>Nivel Brisa</strong
-                ><small>6 visitas · S/ 2,840 acumulados</small>
-                <p>Descuento sugerido <b>10%</b></p>
-              </article>
-              <a class="boton-principal" href="configurar_reserva.html"
-                >Continuar con Valeria</a
-              ><button class="enlace-boton">Registrar otro cliente</button>
+              <div>
+                <dt>Ingreso</dt>
+                <dd>22 jul · 14:00</dd>
+              </div>
+              <div>
+                <dt>Salida</dt>
+                <dd>24 jul · 12:00</dd>
+              </div>
+              <div>
+                <dt>Estado de pago</dt>
+                <dd class="texto-verde">Pagado</dd>
+              </div>
+            </dl>
+          </article>
+          <section class="cuadricula-checkin">
+            <form class="tarjeta formulario-checkin">
+              <h2>Confirmación de ingreso</h2>
+              <label class="campo"
+                ><span>Fecha y hora</span
+                ><input
+                  type="datetime-local"
+                  name="fecha-checkin"
+                  value="2026-07-22T14:07" /></label
+              ><label class="campo"
+                ><span>Observaciones</span
+                ><textarea name="observaciones">
+El huésped solicita habitación silenciosa.</textarea
+                >
+              </label>
+            </form>
+            <aside class="tarjeta-oscura cuenta-inicial">
+              <span>Cuenta inicial</span><strong>S/ 0.00</strong
+              ><small>Saldo pendiente después del pago total.</small>
+              <hr />
+              <p>Al confirmar:</p>
+              <ul>
+                <li>Habitación → Ocupada</li>
+                <li>Cuenta habilitada</li>
+                <li>Consumos disponibles</li>
+              </ul>
             </aside>
           </section>
+          <div class="acciones-finales">
+            <a class="boton-principal" href="cuenta_huesped.html"
+              >Registrar check-in</a
+            >
+          </div>
         </div>
       </main>
     </div>
@@ -192,6 +189,6 @@
     <script src="../js/componentes/validaciones.js"></script>
     <script src="../js/componentes/comun.js"></script>
     <script src="../js/componentes/menu.js"></script>
-    <script src="../js/pantallas/cliente_dni.js"></script>
-  </body>
+    <script src="../js/pantallas/check_in.js"></script>
+  <script src="../../compartido/sesion.js"></script></body>
 </html>

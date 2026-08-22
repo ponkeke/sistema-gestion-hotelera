@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>caja turno | Hotel Raymi</title>
+    <title>cliente dni | Hotel Raymi</title>
 
     <link rel="stylesheet" href="../css/base/variables.css" />
     <link rel="stylesheet" href="../css/base/reset.css" />
     <link rel="stylesheet" href="../css/base/tipografia.css" />
     <link rel="stylesheet" href="../css/componentes/interfaz.css" />
     <link rel="stylesheet" href="../css/componentes/funcionalidad.css" />
-    <link rel="stylesheet" href="../css/pantallas/caja_turno.css" />
+    <link rel="stylesheet" href="../css/pantallas/cliente_dni.css" />
     <link rel="stylesheet" href="../css/adaptable.css" />
   </head>
-  <body data-pantalla="caja-turno" class="caja_turno">
-    <div id="aplicacion" class="caja_turno__contenedor">
+  <body data-rol-requerido="recepcion" data-pantalla="cliente-dni" class="reserva_huesped">
+    <div id="aplicacion" class="reserva_huesped__contenedor">
       <aside class="barra-lateral menu__contenedor" id="barra-lateral">
         <a class="marca menu__contenedor__marca" href="dashboard.html"
-          ><img src="../img/caja_turno/logo-raymi.png" alt="Hotel Raymi"
+          ><img src="../img/cliente_dni/logo-raymi.png" alt="Hotel Raymi"
         /></a>
         <section class="tarjeta-propiedad menu__contenedor__propiedad">
           <span>Propiedad</span><strong>Hotel Huancayo</strong>
@@ -29,42 +29,42 @@
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="dashboard.html"
           >
-            <img src="../img/caja_turno/icono-inicio.svg" alt="" />
+            <img src="../img/cliente_dni/icono-inicio.svg" alt="" />
             <span>Inicio</span>
           </a>
           <a
-            class="elemento-navegacion menu__contenedor__navegacion__opcion"
+            class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
             href="disponibilidad.html"
           >
-            <img src="../img/caja_turno/icono-calendario.svg" alt="" />
+            <img src="../img/cliente_dni/icono-calendario.svg" alt="" />
             <span>Reservas</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="habitaciones.html"
           >
-            <img src="../img/caja_turno/icono-habitaciones.svg" alt="" />
+            <img src="../img/cliente_dni/icono-habitaciones.svg" alt="" />
             <span>Habitaciones</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="cliente_dni.html"
           >
-            <img src="../img/caja_turno/icono-usuario.svg" alt="" />
+            <img src="../img/cliente_dni/icono-usuario.svg" alt="" />
             <span>Huéspedes</span>
           </a>
           <a
-            class="elemento-navegacion menu__contenedor__navegacion__opcion activo"
+            class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="caja_turno.html"
           >
-            <img src="../img/caja_turno/icono-cartera.svg" alt="" />
+            <img src="../img/cliente_dni/icono-cartera.svg" alt="" />
             <span>Caja y turnos</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/caja_turno/icono-reporte.svg" alt="" />
+            <img src="../img/cliente_dni/icono-reporte.svg" alt="" />
             <span>Reportes</span>
           </a>
           <p class="titulo-navegacion titulo-administracion">Administración</p>
@@ -73,21 +73,21 @@
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/caja_turno/icono-usuario.svg" alt="" />
+            <img src="../img/cliente_dni/icono-usuario.svg" alt="" />
             <span>Personal</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/caja_turno/icono-caja.svg" alt="" />
+            <img src="../img/cliente_dni/icono-caja.svg" alt="" />
             <span>Catálogos</span>
           </a>
           <a
             class="elemento-navegacion menu__contenedor__navegacion__opcion"
             href="#"
           >
-            <img src="../img/caja_turno/icono-configuracion.svg" alt="" />
+            <img src="../img/cliente_dni/icono-configuracion.svg" alt="" />
             <span>Configuración</span>
           </a>
         </nav>
@@ -110,74 +110,78 @@
             ☰
           </button>
           <div class="titulo-barra">
-            <strong>Caja y turnos</strong><span>Miércoles, 22 de julio</span>
+            <strong>Reservas</strong><span>Miércoles, 22 de julio</span>
           </div>
           <div class="acciones-barra">
             <span class="etiqueta-rol">Recepción</span
             ><button class="boton-icono" aria-label="Notificaciones">
-              <img src="../img/caja_turno/icono-campana.svg" alt="" /></button
+              <img src="../img/cliente_dni/icono-campana.svg" alt="" /></button
             ><span class="avatar-superior">RE</span>
           </div>
         </header>
-        <div class="contenido-pagina caja_turno__contenedor__contenido">
+        <div class="contenido-pagina reserva_huesped__contenedor__contenido">
           <section class="encabezado-pagina">
             <div>
-              <h1>Caja y cambio de turno</h1>
-              <p>Apertura, conciliación y pendientes en un mismo lugar.</p>
+              <h1>Identificar huésped</h1>
+              <p>Paso 2 de 4 · Busca por DNI o registra un cliente.</p>
             </div>
           </section>
-          <section class="cuadricula-caja">
-            <article class="indicador">
-              <span>Apertura de caja</span><strong>S/ 450.00</strong
-              ><small>08:02 · Monto inicial</small>
-            </article>
-            <article class="indicador">
-              <span>Ventas del turno</span><strong>S/ 4,860.00</strong
-              ><small>32 operaciones</small>
-            </article>
-            <article class="indicador">
-              <span>Pendientes</span><strong>S/ 386.00</strong
-              ><small>3 reservas</small>
-            </article>
-          </section>
-          <section class="cuadricula-cierre">
-            <article class="tarjeta cierre-caja">
-              <h2>Cierre de caja</h2>
+          <ol class="pasos-reserva">
+            <li class="completado"><b>1</b><span>Disponibilidad</span></li>
+            <li class="activo"><b>2</b><span>Huésped</span></li>
+            <li class=""><b>3</b><span>Configuración</span></li>
+            <li class=""><b>4</b><span>Pago</span></li>
+          </ol>
+          <form class="tarjeta buscador-dni">
+            <h2>Documento de identidad</h2>
+            <label class="campo"
+              ><span>Buscar</span
+              ><input
+                type="search"
+                name="dni"
+                value="72845196"
+                maxlength="8" /></label
+            ><button class="boton-secundario">Buscar cliente</button
+            ><small>Búsqueda local · formato de 8 dígitos</small>
+          </form>
+          <section class="cuadricula-cliente">
+            <article class="tarjeta datos-cliente">
+              <h2>Cliente encontrado</h2>
+              <div class="identidad-cliente">
+                <span class="avatar-cliente">VM</span>
+                <div>
+                  <strong>Valeria Méndez Rojas</strong
+                  ><small>DNI 72845196 · Cliente desde 2024</small>
+                </div>
+              </div>
               <dl>
                 <div>
-                  <dt>Efectivo esperado</dt>
-                  <dd>S/ 2,740.00</dd>
+                  <dt>Teléfono</dt>
+                  <dd>+51 987 245 612</dd>
                 </div>
                 <div>
-                  <dt>Efectivo contado</dt>
-                  <dd>
-                    <input
-                      type="number"
-                      value="2738.00"
-                      aria-label="Efectivo contado"
-                    />
-                  </dd>
+                  <dt>Correo</dt>
+                  <dd>valeria.mendez@email.com</dd>
                 </div>
                 <div>
-                  <dt>Diferencia</dt>
-                  <dd class="texto-rojo">− S/ 2.00</dd>
+                  <dt>Visitas</dt>
+                  <dd>6 hospedajes</dd>
+                </div>
+                <div>
+                  <dt>Preferencia</dt>
+                  <dd>Habitaciones silenciosas</dd>
                 </div>
               </dl>
-              <label class="nota-cierre"
-                >La diferencia está dentro del margen permitido.
-                <input
-                  type="text"
-                  placeholder="Agrega una observación antes de cerrar"
-              /></label>
             </article>
-            <aside class="tarjeta-oscura cambio-turno">
-              <span>Cambio de turno</span>
-              <h2>Camila → Diego</h2>
-              <p>Pendientes a comunicar</p>
-              <label><input value="RES-00258 · pago parcial" /></label
-              ><label><input value="Hab. 118 · en limpieza" /></label
-              ><label><input value="Cochera C-04 · ocupada" /></label
-              ><button class="boton-principal">Registrar entrega</button>
+            <aside>
+              <article class="tarjeta-oscura tarjeta-frecuente">
+                <span>Cliente frecuente</span><strong>Nivel Brisa</strong
+                ><small>6 visitas · S/ 2,840 acumulados</small>
+                <p>Descuento sugerido <b>10%</b></p>
+              </article>
+              <a class="boton-principal" href="configurar_reserva.html"
+                >Continuar con Valeria</a
+              ><button class="enlace-boton">Registrar otro cliente</button>
             </aside>
           </section>
         </div>
@@ -188,6 +192,6 @@
     <script src="../js/componentes/validaciones.js"></script>
     <script src="../js/componentes/comun.js"></script>
     <script src="../js/componentes/menu.js"></script>
-    <script src="../js/pantallas/caja_turno.js"></script>
-  </body>
+    <script src="../js/pantallas/cliente_dni.js"></script>
+  <script src="../../compartido/sesion.js"></script></body>
 </html>
